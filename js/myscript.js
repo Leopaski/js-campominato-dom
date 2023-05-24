@@ -4,6 +4,10 @@ function createCell(className){
    	cell.classList.add(className); 
     return cell;
 }
-for (i=0;i<100;i++){
-    tabella.appendChild(createCell("cella")); 
-}
+const play=document.getElementById('play');
+play.addEventListener('click',function(){
+    tabella.innerHTML="";
+    for (i=0;i<100;i++){
+        tabella.appendChild(createCell("cella")); 
+    } 
+})
