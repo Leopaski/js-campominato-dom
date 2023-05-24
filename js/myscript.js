@@ -8,6 +8,12 @@ const play=document.getElementById('play');
 play.addEventListener('click',function(){
     tabella.innerHTML="";
     for (i=0;i<100;i++){
-        tabella.appendChild(createCell("cella")); 
-    } 
-})
+        tabella.appendChild(createCell("cella"));
+        const cellElement=document.querySelector('.cella')
+cellElement.addEventListener('click',function(){
+
+cellElement.classList.toggle('clicked') } 
+)
+}})
+
+

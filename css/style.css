@@ -46,7 +46,6 @@ main{
     height: calc(100%/10);
     border: 2px black solid;
 }
-#tabella.cella.clicked {
+.clicked {
     background-color: darkblue;
-
 }
