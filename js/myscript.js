@@ -17,3 +17,29 @@ cellElement.classList.toggle('clicked') }
 }})
 
 
+
+function getRandomUniqueNumber( minNum, maxNum, elements ){
+    const numbersList = [];
+
+    if ( (maxNum - minNum) < elements ){
+        return [];
+    }
+
+    while (numbersList.length < elements){
+        const newRandomNumber = getRandomInt(minNum, maxNum);
+        if (!numbersList.includes(newRandomNumber)){
+            numbersList.push(newRandomNumber);
+        }
+    }
+
+    return numbersList;
+}
+console.log(getRandomUniqueNumber( 1, 100, 16 ))
+
+
+
+function getRandomInt(min, max){
+    const randomNumber = Math.floor( Math.random() * ( max - min +1) + min);
+    return randomNumber;
+}
+
